@@ -5,3 +5,88 @@
     }
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;  // Latar belakang halaman tetap
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;  // Lebar penuh layar
+  height: 100vh; // Tinggi penuh layar
+  background-color: rgb(33, 38, 49); // Transparansi penuh
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.welcome-section {
+  flex: 1;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 5rem;  // Memperbesar ukuran font menjadi 5 rem
+  margin-bottom: 20px;
+  font-family: 'Alpha', sans-serif;  // Menggunakan font Alpha
+}
+
+h1 span {
+  color: #feca57;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.login {
+  background-color: #007bff;
+}
+
+.btn.signup {
+  background-color: #28a745;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.logo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  max-width: 80%;
+  height: auto;
+}
