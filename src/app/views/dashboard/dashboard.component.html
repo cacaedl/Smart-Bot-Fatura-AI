@@ -1,14 +1,43 @@
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Adding Orbitron and Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 
 <div style="display: flex; align-items: center; height: 100vh; margin-left: 0px;">
   <div style="display: flex; flex-direction: column; align-items: flex-start;">
     <h1 style="width: 100%; font-family: 'Orbitron', sans-serif;">SMART BOT</h1>
     <h1 style="width: 100%; font-family: 'Orbitron', sans-serif;">Fatura</h1>
+
+    <!-- Buttons for Login and Sign Up -->
+    <div style="margin-top: 20px;">
+      <button style="
+        font-family: 'Poppins', sans-serif; 
+        padding: 10px 30px; 
+        font-size: 16px; 
+        margin-right: 10px; 
+        border-radius: 25px; 
+        background-color: #28a745; 
+        color: white;
+        border: none;
+        cursor: pointer;
+        " (click)="goToLogin()">
+        Login
+      </button>
+
+      <button style="
+        font-family: 'Poppins', sans-serif; 
+        padding: 10px 30px; 
+        font-size: 16px; 
+        border-radius: 25px; 
+        background-color: #f8f9fa; 
+        color: #343a40;
+        border: 2px solid #343a40;
+        cursor: pointer;
+        " (click)="goToRegister()">
+        Sign Up
+      </button>
+    </div>
   </div>
+
   <img src="./assets/images/rb_195.png" alt="Logo" style="margin-left: 100px; max-width: 700px; height: auto;">
 </div>
-
-

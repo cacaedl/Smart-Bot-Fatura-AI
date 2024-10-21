@@ -7,6 +7,12 @@ export const routes: Routes = [
     data: {
       title: $localize`Dashboard`
     }
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('../pages/login/login.component').then(m => m.LoginComponent),
+    data: {
+      title: $localize`Login`
+    }
   }
 ];
-
